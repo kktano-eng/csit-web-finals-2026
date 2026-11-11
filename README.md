@@ -9,7 +9,7 @@
 <body>
         <div id="portfolio-container">
       <!-- Header Section -->
-      <h1>Khristian Kyle P.</h1>
+      <h1>Khristian Kyle P. TANO</h1>
       <p style="text-align: center">
         <span class="highlight">IT Student</span> | Web Developer Aspirant
       </p>
