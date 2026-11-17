@@ -1,157 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Khristian | Solar Archive Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSIT 111 - Web Dev</title>
 </head>
 <body>
-<canvas id="stars" aria-hidden="true"></canvas>
-
-<header>
-  <div class="bar">
-    <a class="logo" href="#about">☉ KHRISTIAN</a>
-    <button id="menu" aria-expanded="false" aria-controls="nav">MENU</button>
-    <nav id="nav" aria-label="Main">
+        <div id="portfolio-container">
+      <!-- Header Section -->
+      <h1>Khristian Kyle P.</h1>
+      <p style="text-align: center">
+        <span class="highlight">IT Student</span> | Web Developer Aspirant
+      </p>
+      <!-- Profile Image -->
+      <img
+        src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fwebp&attachment_token=AJGomAZZB4w8DWwVM87oViOK19HjeQyOnl9i2vAfqQlrZ8u%2B5u0jZQ5gL514WtDW69q7V67oxAUlNETh5gSMbjlEY6QtL9VLYxrkWwyn%2FfKOaxmJ4%2F%2B5qdpc1z1N8yVgbfFfx0B0zjXfIk3WmfyZ2D8mIafBncZztj2H5qJ8IBlX6x9raLN8ecw2eh0yqI6IRf5ehTdPQO8CsKW2Bun0RbpFc%2BLeqnk9TjI%2B52rAIlayyDwUXmwAeBQoSpZi8xUTO1Z0GZEF%2B48PLNeU67%2BDFvP9iyz%2BRTsuRW%2BBNO0g9CbSesSOvzd7kNUGmFt%2BKPro9PUx8Z6aMLJHv8OfDbop1mU4aBaDpZCH51Yeu7BNIVGJtRjvu%2Ff0vF3NYskaLWD8xibyEIOa2KyZks%2BRnGaIMxptf7bTu2vfECJg6%2BRXbD%2BGsB%2F16AZxsBWtDpjni%2FxBb%2FjLCqeMjpXzzsDNxiuXxaFijxEeXCMH%2Bkt16wGhTFVs6chTGBls5bN%2FqszluX5rI1%2F%2BkMGYDGLdP6erMJiwUcJAM%2FGzH5fW09a5HS2jFLN2rxO2Q4H6cx8X%2Ft%2FiV3fyOo46MW4oJHXGk%2BOZ1wmRGvA0Hg8Ppj5j4gNMi3r0GAGOjsxB%2FteFpFG9bQ%3D%3D&allow_caching=true&rw=true&sz=s330-c"
+        alt="Profile Picture"
+        class="profile-img"
+      />
+      <hr />
+      <!-- About Section with Formatting -->
+      <h2>About Me</h2>
+      <p>
+        Hello! I am learning <b>HTML</b> and <i>CSS</i> to build exciting web
+        projects. I am <strong>passionate</strong> about
+        <em>computer science and IT</em>.
+      </p>
+      <hr />
+      <!-- Skills Section with Lists -->
+      <h2>Technical Skills</h2>
+      <h3>Languages (Unordered List)</h3>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#academic">Academic</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#values">Values</a></li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Git & GitHub</li>
+        <li>C++</li>
       </ul>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section id="about" class="hero">
-    <div>
-      <div class="pwrap">
-        <div class="orbit"></div>
-        <div class="portrait">
-          <span aria-hidden="true">K</span>
-          <!-- Replace portrait.jpg with your photo file; K shows if it is missing -->
-          <img src="portrait.jpg" alt="Portrait of Khristian" onerror="this.remove()">
-        </div>
+      <h3>Learning Roadmap (Ordered List)</h3>
+      <ol>
+        <li>HTML/CSS Crash Course</li>
+        <li>Publish to GitHub Pages</li>
+        <li>C++ Fundamentals</li>
+      </ol>
+      <hr />
+      <!-- Projects Section with Hyperlinks -->
+      <h2>My Projects</h2>
+      <div class="project-card">
+        <h3>Project 1: Nike Philippines Site</h3>
+        <p>A simple responsive portfolio website built with Google Site.</p>
+        <p>
+          Link: <a href="https://sites.google.com/usa.edu.ph/nike/products-contact" target="_blank">View Demo</a>
+        </p>
       </div>
-      <div class="sub">SUBJECT: KHRISTIAN // BSIT</div>
-    </div>
-    <div>
-      <p class="tag">Mission Log 001 // Profile</p>
-      <h1>Hello, world.<br><span class="grad">I’m Khristian.</span></h1>
-      <p>I’m a BSIT student at the University of San Agustin in Iloilo City. I love making websites that look nice and are easy to use.</p>
-      <p>I start with an idea, plan how it will look, and then write the code. I keep fixing and improving it until it works well on phones and computers. When I find a bug, I don’t give up. I see it as a chance to learn something new.</p>
-      <p>Right now, I am learning more JavaScript and trying out game making in my free time. I like working with others, asking questions, and getting better every day. Welcome to my portfolio. It shows what I have learned so far and what I want to do next.</p>
-      <a class="cta" href="#projects">VIEW PROJECTS ↓</a>
-    </div>
-  </section>
-
-  <section id="academic">
-    <p class="tag">Mission Log 002</p>
-    <h2>Academic Background</h2>
-    <div class="timeline">
-      <article class="card">
-        <span class="meta">2022 – Present</span>
-        <h3>Bachelor of Science in Information Technology</h3>
-        <p>University of San Agustin, Iloilo City · Expected graduation: 2026 <em>(edit)</em></p>
-      </article>
-      <article class="card">
-        <span class="meta">Senior High School</span>
-        <h3>Your SHS Track / Strand <em>(edit)</em></h3>
-        <p>Name of school · Year graduated</p>
-      </article>
-    </div>
-    <h3 style="margin-top:2rem">Relevant Coursework</h3>
-    <ul class="chips">
-      <li>Web Development</li><li>Programming Fundamentals</li><li>Data Structures</li>
-      <li>Database Management</li><li>Networking</li><li>Systems Analysis &amp; Design</li>
-    </ul>
-  </section>
-
-  <section id="achievements">
-    <p class="tag">Mission Log 003</p>
-    <h2>Notable Achievements</h2>
-    <div class="grid">
-      <article class="card"><span class="meta">Academic</span><h3>Dean’s Lister</h3><p>Replace with your honor and semester.</p></article>
-      <article class="card"><span class="meta">Certification</span><h3>freeCodeCamp: Responsive Web Design</h3><p>Replace with a course you completed.</p></article>
-      <article class="card"><span class="meta">Competition</span><h3>Hackathon / Coding Contest</h3><p>Add event name, year, and your role.</p></article>
-      <article class="card"><span class="meta">Leadership</span><h3>Organization Role</h3><p>Add your student org and position.</p></article>
-    </div>
-  </section>
-
-  <section id="skills">
-    <p class="tag">Mission Log 004</p>
-    <h2>Skillset</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Programming &amp; Web</h3>
-        <div class="bar-skill"><div><span>HTML5</span><span>85%</span></div><div class="track"><i style="width:85%"></i></div></div>
-        <div class="bar-skill"><div><span>CSS3</span><span>80%</span></div><div class="track"><i style="width:80%"></i></div></div>
-        <div class="bar-skill"><div><span>JavaScript</span><span>60%</span></div><div class="track"><i style="width:60%"></i></div></div>
-        <div class="bar-skill"><div><span>Python</span><span>55%</span></div><div class="track"><i style="width:55%"></i></div></div>
-        <div class="bar-skill"><div><span>Java / C++</span><span>50%</span></div><div class="track"><i style="width:50%"></i></div></div>
+      <div class="project-card">
+        <h3>Project 2: iCloud Site</h3>
+        <p>A simple responsive portfolio website built with Google Site.</p>
+        <p>
+          Link:
+          <a href="https://sites.google.com/usa.edu.ph/icloud/about-us-target-audience" target="_blank">View Demo</a>
+        </p>
       </div>
-      <div class="card">
-        <h3>Tools</h3>
-        <ul class="chips"><li>Git &amp; GitHub</li><li>VS Code</li><li>Figma</li><li>MySQL</li><li>Chrome DevTools</li></ul>
-        <h3 style="margin-top:1.5rem">Soft Skills</h3>
-        <ul class="chips"><li>Problem-Solving</li><li>Debugging Mindset</li><li>Team Collaboration</li><li>Time Management</li><li>Communication</li></ul>
-      </div>
+      <hr />
+      <!-- Tables Section (Headers, Data, Colspan & Rowspan) -->
+      <h2>Course Schedule & Grades</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Topic</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">CSIT 101</td>
+            <td>Version Control & Git</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>HTML5 Tags & Structure</td>
+            <td>In Progress</td>
+          </tr>
+          <tr>
+            <td>CSS Box Model & Styling</td>
+            <td>In Progress</td>
+          </tr>
+          <tr>
+            <td colspan="2">Overall Workshop Progress</td>
+            <td><strong>80%</strong></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </section>
-
-  <section id="projects">
-    <p class="tag">Mission Log 005</p>
-    <h2>Projects &amp; Researches</h2>
-    <div class="grid">
-      <article class="card">
-        <span class="meta">Web Project</span>
-        <h3>Personal Portfolio</h3>
-        <p><strong>Objective:</strong> Present my background, skills, and work in one responsive, accessible website.</p>
-        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-        <a href="https://github.com/your-username/portfolio">Repository →</a>
-      </article>
-      <article class="card">
-        <span class="meta">Class Project</span>
-        <h3>Your Project Title <em>(edit)</em></h3>
-        <p><strong>Objective:</strong> Describe what problem it solves or what you learned.</p>
-        <p><strong>Tech:</strong> List languages, frameworks, tools</p>
-        <a href="#projects">Link or screenshot →</a>
-      </article>
-      <article class="card">
-        <span class="meta">Research / Capstone</span>
-        <h3>Optional Third Entry</h3>
-        <p><strong>Objective:</strong> Add a paper, game, or app you built.</p>
-        <p><strong>Tech:</strong> Technologies used</p>
-      </article>
-    </div>
-  </section>
-
-  <section id="values">
-    <p class="tag">Mission Log 006</p>
-    <h2>Work Ethics &amp; Core Values</h2>
-    <div class="card">
-      <ul class="clean values">
-        <li><strong>Punctuality:</strong> I respect deadlines and other people’s time.</li>
-        <li><strong>Adaptability:</strong> I stay calm when requirements or tools change.</li>
-        <li><strong>Clean code:</strong> I write readable, well-organized, commented code.</li>
-        <li><strong>Collaboration:</strong> I share knowledge, welcome feedback, and use version control.</li>
-        <li><strong>Continuous learning:</strong> I keep exploring new technologies and improving.</li>
-        <li><strong>Integrity:</strong> I own my work and my mistakes.</li>
-      </ul>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <p>Contact: <a href="mailto:you@example.com">you@example.com</a> · <a href="https://github.com/your-username">GitHub</a></p>
-  <p>© 2026 Khristian · Built with HTML, CSS &amp; JS</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
