@@ -1,83 +1,141 @@
-  font-family: "Courier New", monospace;
-  background: radial-gradient(circle at 80% 0%, #2a1a10, #05050d 60%);
-  color: #b9b6c9;
-  margin: 0;
-  padding: 20px;
-  min-height: 100vh;
+:root {
+  --ink: #14213d;
+  --paper: #fbf9f4;
+  --sea: #1f6f78;
+  --sea-dark: #14515a;
+  --sun: #ffd166;
+  --mist: #e6edf0;
+  --line: #d5dde2;
+  --text: #2b3445;
 }
+
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background-color: var(--ink);
+  color: var(--text);
+  margin: 0;
+  padding: 40px 20px;
+}
+
 #portfolio-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 30px;
-  background: rgba(10, 10, 20, 0.7);
-  border: 1px solid #3a2a1a;
-}
-h1, h2, h3 {
-  color: #f3f0ff;
-  text-align: center;
-  font-family: Georgia, serif;
-  letter-spacing: 1px;
-}
-h1 span { color: #ffa726; }
-p { line-height: 1.7; }
-hr {
-  border: none;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #ffa726, transparent);
-  margin: 20px 0;
+  padding: 48px;
+  background-color: var(--paper);
+  border-radius: 6px;
+  border-left: 10px solid var(--sun);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
 }
 
-/* Circle with the movable letter */
-.letter-circle {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  margin: 20px auto;
-  border-radius: 50%;
-  border: 1px solid #6b4a1f;
-  background: radial-gradient(circle, #3a2a0f, #0a0a14 70%);
-  box-shadow: 0 0 40px rgba(255, 167, 38, 0.25);
-  overflow: hidden;
-  cursor: grab;
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", Georgia, serif;
+  color: var(--ink);
+  text-align: left;
+  line-height: 1.2;
 }
-.letter-circle:active { cursor: grabbing; }
-.movable-letter {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font: 80px Georgia, serif;
-  color: #ffa726;
-  transform: translate(-50%, -50%);
-  user-select: none;
-  transition: transform 0.1s ease-out;
+
+h1 {
+  font-size: 2.6rem;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin: 36px 0 12px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+}
+
+p {
+  line-height: 1.75;
+  max-width: 68ch;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: var(--line);
+  margin: 32px 0;
 }
 
 .profile-img {
   display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  border: 3px solid #ffa726;
+  margin: 0 0 24px;
+  border-radius: 8px;
+  border: 3px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--sun);
 }
-.highlight {
-  background: rgba(255, 167, 38, 0.15);
-  color: #ffa726;
-  padding: 2px 5px;
-}
-.project-card {
-  border: 1px solid #3a2a1a;
-  padding: 15px;
-  margin: 15px 0;
-  background: rgba(255, 255, 255, 0.03);
-  transition: transform 0.2s, border-color 0.2s;
-}
-.project-card:hover {
-  transform: translateY(-4px);
-  border-color: #ffa726;
-}
-a { color: #ffa726; text-decoration: none; font-weight: bold; }
-a:hover { color: #ff6d1f; text-decoration: underline; }
 
-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-th, td { border: 1px solid #3a2a1a; padding: 10px; text-align: left; }
-th { background: #ffa726; color: #05050d; }
-tr:hover { background: rgba(255, 167, 38, 0.1); }
+.highlight {
+  background-color: var(--sun);
+  color: var(--ink);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.project-card {
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--sea);
+  padding: 20px 24px;
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+a {
+  color: var(--sea);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--sea-dark);
+  text-decoration-color: var(--sun);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--sun);
+  outline-offset: 3px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--line);
+  padding: 12px 14px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--ink);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Table row lights up on hover */
+tr:hover td {
+  background-color: var(--mist);
+}
+
+@media (max-width: 600px) {
+  #portfolio-container {
+    padding: 28px 22px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
