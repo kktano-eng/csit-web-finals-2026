@@ -1,99 +1,83 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
+  font-family: "Courier New", monospace;
+  background: radial-gradient(circle at 80% 0%, #2a1a10, #05050d 60%);
+  color: #b9b6c9;
   margin: 0;
   padding: 20px;
+  min-height: 100vh;
 }
-
-
 #portfolio-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 30px;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
+  background: rgba(10, 10, 20, 0.7);
+  border: 1px solid #3a2a1a;
 }
-
-
-h1,
-h2,
-h3 {
-  color: #2c3e50;
+h1, h2, h3 {
+  color: #f3f0ff;
   text-align: center;
+  font-family: Georgia, serif;
+  letter-spacing: 1px;
 }
-
-
-p {
-  line-height: 1.6;
-}
-
-
+h1 span { color: #ffa726; }
+p { line-height: 1.7; }
 hr {
   border: none;
   height: 1px;
-  background-color: #ccc;
+  background: linear-gradient(90deg, transparent, #ffa726, transparent);
   margin: 20px 0;
 }
 
+/* Circle with the movable letter */
+.letter-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: 1px solid #6b4a1f;
+  background: radial-gradient(circle, #3a2a0f, #0a0a14 70%);
+  box-shadow: 0 0 40px rgba(255, 167, 38, 0.25);
+  overflow: hidden;
+  cursor: grab;
+}
+.letter-circle:active { cursor: grabbing; }
+.movable-letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font: 80px Georgia, serif;
+  color: #ffa726;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  transition: transform 0.1s ease-out;
+}
 
 .profile-img {
   display: block;
   margin: 0 auto;
   border-radius: 50%;
-  border: 3px solid #3498db;
+  border: 3px solid #ffa726;
 }
-
-
 .highlight {
-  background-color: #fff3cd;
+  background: rgba(255, 167, 38, 0.15);
+  color: #ffa726;
   padding: 2px 5px;
 }
-
-
 .project-card {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #3a2a1a;
   padding: 15px;
   margin: 15px 0;
-  background-color: #fafafa;
+  background: rgba(255, 255, 255, 0.03);
+  transition: transform 0.2s, border-color 0.2s;
 }
-
-
-a {
-  color: #3498db;
-  text-decoration: none;
-  font-weight: bold;
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #ffa726;
 }
+a { color: #ffa726; text-decoration: none; font-weight: bold; }
+a:hover { color: #ff6d1f; text-decoration: underline; }
 
-
-a:hover {
-  color: #1d6fa5;
-  text-decoration: underline;
-}
-
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-
-
-th,
-td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: left;
-}
-
-
-th {
-  background-color: #2c3e50;
-  color: white;
-}
-
-
-/* Table row lights up on hover pseudo-selector */
-tr:hover {
-  background-color: #e8f4fc;
-}
+table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+th, td { border: 1px solid #3a2a1a; padding: 10px; text-align: left; }
+th { background: #ffa726; color: #05050d; }
+tr:hover { background: rgba(255, 167, 38, 0.1); }
